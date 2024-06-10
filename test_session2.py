@@ -18,8 +18,8 @@ import re
 import inspect
 
 README_CONTENT_CHECK_FOR = [
-    'Something',
-    'SomethingNew',
+    'something',
+    'somethingNew',
     'add_something',
     'clear_memory',
     'critical_function',
@@ -90,8 +90,8 @@ def test_readme_file_for_formatting():
 
 
 def test_class_repr():
-    s = session2.Something()
-    s_n = session2.SomethingNew()
+    s = session2.something()
+    s_n = session2.somethingNew()
 
     assert 'object at' not in s.__repr__() and 'object at' not in s_n.__repr__()
 
